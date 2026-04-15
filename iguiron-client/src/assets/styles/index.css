@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Poppins", sans-serif;
+}
+
 @layer base {
   body {
-    @apply bg-zinc-100 text-zinc-900 antialiased;
+    @apply bg-zinc-100 text-zinc-900 antialiased font-sans;
   }
 
   #root {

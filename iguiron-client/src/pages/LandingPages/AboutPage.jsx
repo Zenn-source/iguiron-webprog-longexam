@@ -1,5 +1,4 @@
 import Button from '../../components/Button';
-import logo from '../../assets/img/nubdexchange_logo.png';
 import lanyard from '../../assets/img/lanyard.jpg';
 import scarf from '../../assets/img/scarf.jpg';
 import review1 from '../../assets/img/review1.jpg';
