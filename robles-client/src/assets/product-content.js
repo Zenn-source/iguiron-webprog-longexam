@@ -5,6 +5,7 @@ const products = [
     category: 'Bags',
     price: 'PHP 499',
     stock: 'In stock',
+    image: "/totebag.png",
     content: [
       'A roomy everyday tote for books, gym clothes, chargers, and quick campus errands.',
       'Made with thick canvas, reinforced handles, and a clean monochrome print.',
@@ -17,6 +18,7 @@ const products = [
     category: 'Stationery',
     price: 'PHP 249',
     stock: 'In stock',
+    image: "/notebook.png",
     content: [
       'A practical bundle of notebooks, sticky notes, and quick-label tabs for daily class work.',
       'The set is light, compact, and easy to keep inside a backpack or locker.',
@@ -29,6 +31,7 @@ const products = [
     category: 'Drinkware',
     price: 'PHP 599',
     stock: 'Low stock',
+    image: "/tumbler.jpg",
     content: [
       'A double-wall tumbler built for water, coffee, or tea during long school days.',
       'The matte finish keeps the look simple while the lid helps reduce spills in your bag.',
@@ -36,15 +39,15 @@ const products = [
     ],
   },
   {
-    name: 'wireless-study-lamp',
-    title: 'Wireless Study Lamp',
-    category: 'Tech',
-    price: 'PHP 899',
+    name: 'nu-scarf',
+    title: 'NU Scarf',
+    category: 'Apparel',
+    price: 'PHP 399',
     stock: 'In stock',
+    image: "/scarf.jpg",
     content: [
-      'A compact rechargeable lamp for dorm desks, night study sessions, and small workspaces.',
-      'It has three brightness levels and a foldable body that stores neatly after use.',
-      'Good for reading, writing, and focused desk work without taking too much space.',
+      'Crafted from a high-density weave that mimics the loft of cashmere for maximum comfort against the skin.',
+      'The oversized length allows for multiple styling options—wrap it twice for extra warmth or drape it over your shoulders as a shawl.',
     ],
   },
   {
@@ -53,6 +56,7 @@ const products = [
     category: 'Apparel',
     price: 'PHP 1,199',
     stock: 'Preorder',
+    image: "/nuhoodie.jpg",
     content: [
       'A soft everyday hoodie with a relaxed fit for classrooms, commute days, and weekends.',
       'The heavy cotton blend keeps structure while staying comfortable for regular wear.',
@@ -60,15 +64,16 @@ const products = [
     ],
   },
   {
-    name: 'desk-organizer-kit',
-    title: 'Desk Organizer Kit',
-    category: 'Workspace',
-    price: 'PHP 349',
+    name: 'NU-sweatshirt',
+    title: 'NU Sweatshirt',
+    category: 'Apparel',
+    price: 'PHP 899',
     stock: 'In stock',
+    image: "/nusweatshirt.jpg",
     content: [
-      'A small organizer set for pens, clips, cables, cards, and other desk essentials.',
-      'The modular pieces can be arranged based on your study area or dorm table.',
-      'Keeps daily tools visible without adding clutter.',
+      'A modern, unisex silhouette that offers plenty of room for layering over a collared shirt or under a heavy coat.',
+      'Designed with a brushed interior to keep you warm without the bulk.',
+      'Features reinforced ribbing at the cuffs and hem to maintain its shape, no matter how many times it hits the wash.',
     ],
   },
   {
@@ -77,6 +82,7 @@ const products = [
     category: 'Accessories',
     price: 'PHP 179',
     stock: 'In stock',
+    image: "/lanyard.jpg",
     content: [
       'A durable lanyard and card holder set for IDs, access cards, and small passes.',
       'The clip is easy to detach when scanning or presenting credentials.',
@@ -89,6 +95,7 @@ const products = [
     category: 'Bundles',
     price: 'PHP 399',
     stock: 'In stock',
+    image: "/nusticker.jpg",
     content: [
       'A compact bundle with snacks, tabs, pens, and quick notes for busy review weeks.',
       'Packed for convenience so students can grab one kit and focus on studying.',

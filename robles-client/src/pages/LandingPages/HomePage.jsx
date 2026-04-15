@@ -1,10 +1,13 @@
 import Button from '../../components/Button';
 import banner from '../../assets/img/nu_bulldogex_banner.jpg';
+import lanyard from '../../assets/img/lanyard.jpg';
+import scarf from '../../assets/img/scarf.jpg';
+import champs from '../../assets/img/nuchamps.png';
 
 const HomePage = () => {
     return (
         <div className="flex w-full flex-col gap-6">
-            <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8">
+            <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-500 px-4 py-10 sm:px-6 lg:px-8">
                 <img
                     src={banner}
                     alt=""
@@ -36,7 +39,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+            <section className="border-y-2 border-zinc-500 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
                 <div className="mb-6">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
                         Store Overview
@@ -45,25 +48,25 @@ const HomePage = () => {
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+                    <div className="rounded-3xl border-2 border-zinc-500 p-5">
                         <p className="text-2xl font-bold text-zinc-900">08</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Products
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+                    <div className="rounded-3xl border-2 border-zinc-500 p-5">
                         <p className="text-2xl font-bold text-zinc-900">06</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Categories
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+                    <div className="rounded-3xl border-2 border-zinc-500 p-5">
                         <p className="text-2xl font-bold text-zinc-900">24</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Orders
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+                    <div className="rounded-3xl border-2 border-zinc-500 p-5">
                         <p className="text-2xl font-bold text-zinc-900">03</p>
                         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
                             Pickup Slots
@@ -72,7 +75,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+            <section className="border-y-2 border-zinc-500 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
                 <div className="mb-6">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
                         Shop Sections
@@ -81,10 +84,8 @@ const HomePage = () => {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-3">
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-                        </div>
+                    <article className="rounded-3xl border-2 border-zinc-500  p-4">
+                        <img src={lanyard} alt="" className="aspect-4/3 rounded-[1.25rem] object-cover" />
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Daily Essentials</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
                             Bags, tumblers, lanyards, and items used every school day.
@@ -92,10 +93,8 @@ const HomePage = () => {
                         <Button to="/products" className="mt-4" variant="primary">View Products</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-                        </div>
+                    <article className="rounded-3xl border-2 border-zinc-500  p-4">
+                        <img src={scarf} alt="" className="aspect-4/3 rounded-[1.25rem] object-cover" />
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Study Supplies</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
                             Notes, desk tools, and study kits for class and review weeks.
@@ -103,10 +102,8 @@ const HomePage = () => {
                         <Button to="/products" className="mt-4" variant="primary">Shop Supplies</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-                        </div>
+                    <article className="rounded-3xl border-2 border-zinc-500  p-4">
+                        <img src={champs} alt="" className="aspect-4/3 rounded-[1.25rem] object-cover" />
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Campus Apparel</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
                             Comfortable pieces for class days, commute days, and weekends.

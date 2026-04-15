@@ -1,15 +1,15 @@
-import { Outlet } from 'react-router-dom';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import { Outlet } from "react-router-dom";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-zinc-100 text-zinc-900">
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-[#cad0ff] from-0% via-[#e3e3e3] via-75% to-[#e3e3e3] text-stone-900">
       <NavBar />
-      <main className="pb-16 pt-20">
+      <main className="flex-1 pt-20">
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
